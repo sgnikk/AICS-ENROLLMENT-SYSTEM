@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21892784-C9C9-4CF2-BEC7-E26E8EFB73CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AICS_ENROLLMENT_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>AICS_ENROLLMENT_SYSTEM</RootNamespace>
+    <AssemblyName>AICS-ENROLLMENT SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AICS-ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AICS-ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=6.7.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.6.7.0\lib\net472\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="collegeenrollingpage.Designer.vb">
+      <DependentUpon>collegeenrollingpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="collegeenrollingpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmissionpage.Designer.vb">
+      <DependentUpon>addmissionpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addmissionpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.vb">
+      <DependentUpon>adminform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COURSEFORM.Designer.vb">
+      <DependentUpon>COURSEFORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COURSEFORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coursemaintenance.Designer.vb">
+      <DependentUpon>coursemaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coursemaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coursespages.Designer.vb">
+      <DependentUpon>coursespages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="coursespages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deptform.Designer.vb">
+      <DependentUpon>deptform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deptform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deptmaintenance.Designer.vb">
+      <DependentUpon>deptmaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deptmaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enrollmentforms.Designer.vb">
+      <DependentUpon>enrollmentforms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enrollmentforms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enrollmenthistory.Designer.vb">
+      <DependentUpon>enrollmenthistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enrollmenthistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccounting.Designer.vb">
+      <DependentUpon>formAccounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formAccounting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccountingPlatform.Designer.vb">
+      <DependentUpon>formAccountingPlatform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formAccountingPlatform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTuitionPayment.Designer.vb">
+      <DependentUpon>formTuitionPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formTuitionPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegFormPrinting.Designer.vb">
+      <DependentUpon>Form_RegFormPrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegFormPrinting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAINTENANCES.Designer.vb">
+      <DependentUpon>MAINTENANCES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAINTENANCES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="professorspage.Designer.vb">
+      <DependentUpon>professorspage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="professorspage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profform.Designer.vb">
+      <DependentUpon>profform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profmaintenance.Designer.vb">
+      <DependentUpon>profmaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profmaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reqmaintenance.Designer.vb">
+      <DependentUpon>reqmaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reqmaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="requirementsform.Designer.vb">
+      <DependentUpon>requirementsform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="requirementsform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomform.Designer.vb">
+      <DependentUpon>roomform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roomform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roommaintenance.Designer.vb">
+      <DependentUpon>roommaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roommaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assessmentform2.Designer.vb">
+      <DependentUpon>assessmentform2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assessmentform2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schoolyearform.Designer.vb">
+      <DependentUpon>schoolyearform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="schoolyearform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectform.Designer.vb">
+      <DependentUpon>subjectform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subjectform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectmaintenance.Designer.vb">
+      <DependentUpon>subjectmaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subjectmaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectspage.Designer.vb">
+      <DependentUpon>subjectspage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="subjectspage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assessmentform.Designer.vb">
+      <DependentUpon>assessmentform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assessmentform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="symaintenances.Designer.vb">
+      <DependentUpon>symaintenances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="symaintenances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userformm.Designer.vb">
+      <DependentUpon>userformm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userformm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usersmaintenancee.Designer.vb">
+      <DependentUpon>usersmaintenancee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usersmaintenancee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_AICS_ENROLLMENT_SYSTEMDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet9.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assessmentform2.resx">
+      <DependentUpon>assessmentform2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collegeenrollingpage.resx">
+      <DependentUpon>collegeenrollingpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addmissionpage.resx">
+      <DependentUpon>addmissionpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COURSEFORM.resx">
+      <DependentUpon>COURSEFORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coursemaintenance.resx">
+      <DependentUpon>coursemaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coursespages.resx">
+      <DependentUpon>coursespages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deptform.resx">
+      <DependentUpon>deptform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deptmaintenance.resx">
+      <DependentUpon>deptmaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enrollmentforms.resx">
+      <DependentUpon>enrollmentforms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enrollmenthistory.resx">
+      <DependentUpon>enrollmenthistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAccounting.resx">
+      <DependentUpon>formAccounting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAccountingPlatform.resx">
+      <DependentUpon>formAccountingPlatform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTuitionPayment.resx">
+      <DependentUpon>formTuitionPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegFormPrinting.resx">
+      <DependentUpon>Form_RegFormPrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAINTENANCES.resx">
+      <DependentUpon>MAINTENANCES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="professorspage.resx">
+      <DependentUpon>professorspage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profform.resx">
+      <DependentUpon>profform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profmaintenance.resx">
+      <DependentUpon>profmaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RegistrationForm.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reqmaintenance.resx">
+      <DependentUpon>reqmaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="requirementsform.resx">
+      <DependentUpon>requirementsform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomform.resx">
+      <DependentUpon>roomform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roommaintenance.resx">
+      <DependentUpon>roommaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schoolyearform.resx">
+      <DependentUpon>schoolyearform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectform.resx">
+      <DependentUpon>subjectform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectmaintenance.resx">
+      <DependentUpon>subjectmaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectspage.resx">
+      <DependentUpon>subjectspage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assessmentform.resx">
+      <DependentUpon>assessmentform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SubReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="symaintenances.resx">
+      <DependentUpon>symaintenances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userformm.resx">
+      <DependentUpon>userformm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersmaintenancee.resx">
+      <DependentUpon>usersmaintenancee.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet1.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet1.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet2.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet2.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet3.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet3.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet6.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet6.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet9.xsc">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_AICS_ENROLLMENT_SYSTEMDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_AICS_ENROLLMENT_SYSTEMDataSet9.xss">
+      <DependentUpon>_AICS_ENROLLMENT_SYSTEMDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-325x243 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-325x243 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradcapp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admission-80 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admission-80 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admission-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admission-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-enrollment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aics logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aics logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-325x243 %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aics logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aics logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-students-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subjects-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-100.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
